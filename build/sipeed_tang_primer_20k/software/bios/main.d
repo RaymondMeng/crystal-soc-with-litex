@@ -52,7 +52,8 @@ main.o: /home/mengcheng/Documents/litex/litex/soc/software/bios/main.c \
  /home/mengcheng/Documents/litex/litex/soc/software/liblitespi/spiflash.h \
  /home/mengcheng/Documents/litex/litex/soc/software/liblitespi/spiram.h \
  /home/mengcheng/Documents/litex/litex/soc/software/liblitesdcard/sdcard.h \
- /home/mengcheng/Documents/litex/litex/soc/software/liblitesata/sata.h
+ /home/mengcheng/Documents/litex/litex/soc/software/liblitesata/sata.h \
+ /home/mengcheng/Documents/litex/litex/soc/software/liblitedescore/des_core.h
 
 /home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio/stdio.h:
 
@@ -161,3 +162,5 @@ main.o: /home/mengcheng/Documents/litex/litex/soc/software/bios/main.c \
 /home/mengcheng/Documents/litex/litex/soc/software/liblitesdcard/sdcard.h:
 
 /home/mengcheng/Documents/litex/litex/soc/software/liblitesata/sata.h:
+
+/home/mengcheng/Documents/litex/litex/soc/software/liblitedescore/des_core.h:

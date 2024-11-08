@@ -1,6 +1,6 @@
-PACKAGES=libc libcompiler_rt libbase libfatfs liblitespi liblitedram libliteeth liblitesdcard liblitesata bios
-PACKAGE_DIRS=/home/mengcheng/Documents/litex/litex/soc/software/libc /home/mengcheng/Documents/litex/litex/soc/software/libcompiler_rt /home/mengcheng/Documents/litex/litex/soc/software/libbase /home/mengcheng/Documents/litex/litex/soc/software/libfatfs /home/mengcheng/Documents/litex/litex/soc/software/liblitespi /home/mengcheng/Documents/litex/litex/soc/software/liblitedram /home/mengcheng/Documents/litex/litex/soc/software/libliteeth /home/mengcheng/Documents/litex/litex/soc/software/liblitesdcard /home/mengcheng/Documents/litex/litex/soc/software/liblitesata /home/mengcheng/Documents/litex/litex/soc/software/bios
-LIBS=libc libcompiler_rt libbase libfatfs liblitespi liblitedram libliteeth liblitesdcard liblitesata
+PACKAGES=libc libcompiler_rt libbase libfatfs liblitespi liblitedram libliteeth liblitesdcard liblitesata liblitedescore bios
+PACKAGE_DIRS=/home/mengcheng/Documents/litex/litex/soc/software/libc /home/mengcheng/Documents/litex/litex/soc/software/libcompiler_rt /home/mengcheng/Documents/litex/litex/soc/software/libbase /home/mengcheng/Documents/litex/litex/soc/software/libfatfs /home/mengcheng/Documents/litex/litex/soc/software/liblitespi /home/mengcheng/Documents/litex/litex/soc/software/liblitedram /home/mengcheng/Documents/litex/litex/soc/software/libliteeth /home/mengcheng/Documents/litex/litex/soc/software/liblitesdcard /home/mengcheng/Documents/litex/litex/soc/software/liblitesata /home/mengcheng/Documents/litex/litex/soc/software/liblitedescore /home/mengcheng/Documents/litex/litex/soc/software/bios
+LIBS=libc libcompiler_rt libbase libfatfs liblitespi liblitedram libliteeth liblitesdcard liblitesata liblitedescore
 TRIPLE=riscv64-unknown-elf
 CPU=vexriscv
 CPUFAMILY=riscv
@@ -23,6 +23,7 @@ LIBLITEDRAM_DIRECTORY=/home/mengcheng/Documents/litex/litex/soc/software/liblite
 LIBLITEETH_DIRECTORY=/home/mengcheng/Documents/litex/litex/soc/software/libliteeth
 LIBLITESDCARD_DIRECTORY=/home/mengcheng/Documents/litex/litex/soc/software/liblitesdcard
 LIBLITESATA_DIRECTORY=/home/mengcheng/Documents/litex/litex/soc/software/liblitesata
+LIBLITEDESCORE_DIRECTORY=/home/mengcheng/Documents/litex/litex/soc/software/liblitedescore
 BIOS_DIRECTORY=/home/mengcheng/Documents/litex/litex/soc/software/bios
 LTO=0
 BIOS_CONSOLE_FULL=1

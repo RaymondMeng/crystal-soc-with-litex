@@ -265,7 +265,7 @@
         "config_cpu_name": "vexriscv",
         "config_cpu_human_name": "vexriscv",
         "config_cpu_nop": "nop",
-        "config_identifier": "litex soc on tang primer 20k 2024-11-08 20:23:07",
+        "config_identifier": "litex soc on tang primer 20k 2024-11-09 02:13:37",
         "config_l2_size": 8192,
         "config_csr_data_width": 32,
         "config_csr_alignment": 32,

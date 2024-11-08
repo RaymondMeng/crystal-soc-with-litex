@@ -116,7 +116,7 @@
         "config_cpu_human_name": "vexriscv",
         "config_cpu_nop": "nop",
         "config_main_ram_init": 1,
-        "config_identifier": "litex simulation 2024-11-04 00:48:31",
+        "config_identifier": "litex simulation 2024-11-09 02:42:24",
         "rom_boot_address": 1073741824,
         "config_csr_data_width": 32,
         "config_csr_alignment": 32,

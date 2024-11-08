@@ -6,12 +6,8 @@
     <FileList>
         <File path="/home/mengcheng/Documents/litedescore/src/counter.v" type="verilog"/>
         <File path="/home/mengcheng/Documents/litedescore/src/DES_top.v" type="verilog"/>
-        <File path="/home/mengcheng/Documents/litedescore/src/extension.v" type="verilog"/>
         <File path="/home/mengcheng/Documents/litedescore/src/keygen.v" type="verilog"/>
         <File path="/home/mengcheng/Documents/litedescore/src/mux.v" type="verilog"/>
-        <File path="/home/mengcheng/Documents/litedescore/src/Permutation_init.v" type="verilog"/>
-        <File path="/home/mengcheng/Documents/litedescore/src/Permutation_inverse.v" type="verilog"/>
-        <File path="/home/mengcheng/Documents/litedescore/src/round_p.v" type="verilog"/>
         <File path="/home/mengcheng/Documents/litedescore/src/Round.v" type="verilog"/>
         <File path="/home/mengcheng/Documents/litedescore/src/s_box.v" type="verilog"/>
         <File path="/home/mengcheng/Documents/litedescore/src/sbox1_lut.v" type="verilog"/>
@@ -22,6 +18,10 @@
         <File path="/home/mengcheng/Documents/litedescore/src/sbox6_lut.v" type="verilog"/>
         <File path="/home/mengcheng/Documents/litedescore/src/sbox7_lut.v" type="verilog"/>
         <File path="/home/mengcheng/Documents/litedescore/src/sbox8_lut.v" type="verilog"/>
+        <File path="/home/mengcheng/Documents/litedescore/src/extension.v" type="verilog"/>
+        <File path="/home/mengcheng/Documents/litedescore/src/round_p.v" type="verilog"/>
+        <File path="/home/mengcheng/Documents/litedescore/src/Permutation_init.v" type="verilog"/>
+        <File path="/home/mengcheng/Documents/litedescore/src/Permutation_inverse.v" type="verilog"/>
         <File path="/home/mengcheng/Documents/pythondata-cpu-vexriscv/pythondata_cpu_vexriscv/verilog/VexRiscv.v" type="verilog"/>
         <File path="/home/mengcheng/Documents/build/sipeed_tang_primer_20k/gateware/sipeed_tang_primer_20k.v" type="verilog"/>
     </FileList>

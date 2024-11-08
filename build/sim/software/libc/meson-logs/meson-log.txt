@@ -1,4 +1,4 @@
-Build started at 2024-11-03T22:08:21.142752
+Build started at 2024-11-09T02:28:59.696153
 Main binary: /usr/bin/python38
 Build Options: -Dmultilib=false -Dpicocrt=false -Datomic-ungetc=false -Dthread-local-storage=false -Dio-long-long=true -Dformat-default=integer -Dincludedir=picolibc/riscv64-unknown-elf/include -Dlibdir=picolibc/riscv64-unknown-elf/lib --cross-file=cross.txt
 Python system: Linux
@@ -32,7 +32,7 @@ This program has absolutely no warranty.
 -----------
 stderr:
 collect2 version 8.3.0
-/opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld -plugin /opt/riscv/bin/../libexec/gcc/riscv64-unknown-elf/8.3.0/liblto_plugin.so -plugin-opt=/opt/riscv/bin/../libexec/gcc/riscv64-unknown-elf/8.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZErpr0.res --sysroot=/opt/riscv/bin/../riscv64-unknown-elf -melf32lriscv -L/home/mengcheng/Documents/build/sim/software/include -L/opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0 -L/opt/riscv/bin/../lib/gcc -L/opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib -L/opt/riscv/bin/../riscv64-unknown-elf/lib --version --no-dynamic-linker --build-id=none
+/opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld -plugin /opt/riscv/bin/../libexec/gcc/riscv64-unknown-elf/8.3.0/liblto_plugin.so -plugin-opt=/opt/riscv/bin/../libexec/gcc/riscv64-unknown-elf/8.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9RmtUE.res --sysroot=/opt/riscv/bin/../riscv64-unknown-elf -melf32lriscv -L/home/mengcheng/Documents/build/sim/software/include -L/opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0 -L/opt/riscv/bin/../lib/gcc -L/opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/lib -L/opt/riscv/bin/../riscv64-unknown-elf/lib --version --no-dynamic-linker --build-id=none
 -----------
 Sanity testing C compiler: riscv64-unknown-elf-gcc
 Is cross compiler: True.
@@ -75,7 +75,7 @@ This program has absolutely no warranty.
 -----------
 stderr:
 collect2 version 11.4.0
-/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnnof81.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. --version -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccTi7DQB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. --version -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
 -----------
 Sanity testing C compiler: cc
 Is cross compiler: False.
@@ -105,16 +105,16 @@ Host machine cpu: vexriscv
 Target machine cpu family: riscv
 Target machine cpu: vexriscv
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpsl9reanx
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp0to1k3_9
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpsl9reanx/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpsl9reanx/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -nostdlib` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp0to1k3_9/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp0to1k3_9/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -nostdlib` -> 0
 Compiler for C supports arguments -nostdlib: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp6xasmxy0
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmplh6lroom
 Code:
 
 #include <float.h>
@@ -128,121 +128,121 @@ long double test()
 }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp6xasmxy0/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp6xasmxy0/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmplh6lroom/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmplh6lroom/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib` -> 0
 Checking if "long double check" compiles: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpst975rtv
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpo8rlks7_
 Code:
 
 #include <float.h>
 char size_test[sizeof(double) == sizeof(long double) ? 1 : -1];
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpst975rtv/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpst975rtv/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib` -> 1
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpo8rlks7_/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpo8rlks7_/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib` -> 1
 stderr:
-/home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpst975rtv/testfile.c:3:6: error: size of array 'size_test' is negative
+/home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpo8rlks7_/testfile.c:3:6: error: size of array 'size_test' is negative
  char size_test[sizeof(double) == sizeof(long double) ? 1 : -1];
       ^~~~~~~~~
 -----------
 Checking if "long double same as double" compiles: NO 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp0nl01jk8
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpkn14nz3_
 Code:
 
 #include <float.h>
 char size_test[__LDBL_MANT_DIG__ == 64 ? 1 : -1];
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp0nl01jk8/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp0nl01jk8/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib` -> 1
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpkn14nz3_/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpkn14nz3_/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib` -> 1
 stderr:
-/home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp0nl01jk8/testfile.c:3:6: error: size of array 'size_test' is negative
+/home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpkn14nz3_/testfile.c:3:6: error: size of array 'size_test' is negative
  char size_test[__LDBL_MANT_DIG__ == 64 ? 1 : -1];
       ^~~~~~~~~
 -----------
 Checking if "long double mantissa is 64 bits" compiles: NO 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpdhevjj8b
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpvjn5hp2v
 Code:
 
 #include <float.h>
 char size_test[__LDBL_MANT_DIG__ == 113 ? 1 : -1];
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpdhevjj8b/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpdhevjj8b/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpvjn5hp2v/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpvjn5hp2v/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib` -> 0
 Checking if "long double mantissa is 113 bits" compiles: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpq3pv_zx5
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp3yglaas1
 Code:
 
 char size_test[sizeof(float) == sizeof(double) ? 1 : -1];
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpq3pv_zx5/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpq3pv_zx5/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib` -> 1
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp3yglaas1/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp3yglaas1/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib` -> 1
 stderr:
-/home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpq3pv_zx5/testfile.c:2:6: error: size of array 'size_test' is negative
+/home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp3yglaas1/testfile.c:2:6: error: size of array 'size_test' is negative
  char size_test[sizeof(float) == sizeof(double) ? 1 : -1];
       ^~~~~~~~~
 -----------
 Checking if "double same as float" compiles: NO 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp9o88wnwd
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpl1cqs5tg
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp9o88wnwd/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp9o88wnwd/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fno-common` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpl1cqs5tg/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpl1cqs5tg/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fno-common` -> 0
 Compiler for C supports arguments -fno-common: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpjxlclonf
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp71_j_f26
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpjxlclonf/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpjxlclonf/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -frounding-math` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp71_j_f26/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp71_j_f26/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -frounding-math` -> 0
 Compiler for C supports arguments -frounding-math: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpx5zyl81m
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpls1b3b5p
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpx5zyl81m/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpx5zyl81m/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fsignaling-nans` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpls1b3b5p/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpls1b3b5p/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fsignaling-nans` -> 0
 Compiler for C supports arguments -fsignaling-nans: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpm6bzauf7
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp3notilv0
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpm6bzauf7/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpm6bzauf7/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wunsupported-floating-point-opt -Wno-unsupported-floating-point-opt` -> 1
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp3notilv0/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp3notilv0/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wunsupported-floating-point-opt -Wno-unsupported-floating-point-opt` -> 1
 stderr:
 riscv64-unknown-elf-gcc: error: unrecognized command line option '-Wunsupported-floating-point-opt'; did you mean '-Wunsuffixed-float-constants'?
 -----------
 Compiler for C supports arguments -Wno-unsupported-floating-point-opt: NO 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpdnn5emss
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpxk1ckm5l
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpdnn5emss/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpdnn5emss/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fno-stack-protector` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpxk1ckm5l/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpxk1ckm5l/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fno-stack-protector` -> 0
 Compiler for C supports arguments -fno-stack-protector: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpdp1t3fci
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp749ks_3j
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpdp1t3fci/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpdp1t3fci/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fno-builtin-copysignl` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp749ks_3j/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp749ks_3j/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fno-builtin-copysignl` -> 0
 Compiler for C supports arguments -fno-builtin-copysignl: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpkfquz5c8
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp53sctji3
 Code:
 
         #ifndef __USER_LABEL_PREFIX__
@@ -253,7 +253,7 @@ Code:
         "MESON_HAVE_UNDERSCORE_DELIMITER" MESON_UNDERSCORE_PREFIX
         
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpkfquz5c8/testfile.c -E -P -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -P -O0` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp53sctji3/testfile.c -E -P -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -P -O0` -> 0
 stdout:
 #define __STDC__ 1
 #define __STDC_VERSION__ 201710L
@@ -575,47 +575,47 @@ Queried compiler for function prefix: __USER_LABEL_PREFIX__ is ""
 Program riscv64-unknown-elf-gcc-nm found: YES
 Program scripts/duplicate-names found: YES (/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/scripts/duplicate-names)
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpjfaurfuo
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp41vbm514
 Code:
 int main(void) { return 0; }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpjfaurfuo/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpjfaurfuo/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wl,--fatal-warnings -Wl,--defsym=_start=0 -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
+Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp41vbm514/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp41vbm514/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wl,--fatal-warnings -Wl,--defsym=_start=0 -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
 Compiler for C supports link arguments -Wl,--defsym=_start=0: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpuw_0buxj
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp9l4prrtb
 Code:
 int main(void) { return 0; }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpuw_0buxj/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpuw_0buxj/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wl,--fatal-warnings -Wl,-alias,main,testalias -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 1
+Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp9l4prrtb/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp9l4prrtb/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wl,--fatal-warnings -Wl,-alias,main,testalias -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 1
 stderr:
 /opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: unrecognized -a option `lias'
 collect2: error: ld returned 1 exit status
 -----------
 Compiler for C supports link arguments -Wl,-alias,main,testalias: NO 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpjqdffw3i
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmph8nub_iz
 Code:
 
         int foo(void) { return 0; }
         int bar(void) __attribute__((alias("foo")));
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpjqdffw3i/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpjqdffw3i/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmph8nub_iz/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmph8nub_iz/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes` -> 0
 Compiler for C supports function attribute alias: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpob9aye47
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpxdv8i0em
 Code:
 int foo(const char * p, ...) __attribute__((format(printf, 1, 2)));
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpob9aye47/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpob9aye47/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpxdv8i0em/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpxdv8i0em/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes` -> 0
 Compiler for C supports function attribute format: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpralgi22k
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpkrmcp75f
 Code:
 int foo(void) __attribute__((weak));
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpralgi22k/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpralgi22k/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpkrmcp75f/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpkrmcp75f/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes` -> 0
 Compiler for C supports function attribute weak: YES 
 Running command: /opt/riscv/bin/riscv64-unknown-elf-gcc -print-search-dirs
 --- stdout ---
@@ -639,101 +639,101 @@ Configuring test.specs using configuration
 Configuring picolibc.ld using configuration
 Configuring picolibcpp.ld using configuration
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpsfg_v_mj
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpn8utugi0
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpsfg_v_mj/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpsfg_v_mj/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=implicit-function-declaration` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpn8utugi0/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpn8utugi0/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=implicit-function-declaration` -> 0
 Compiler for C supports arguments -Werror=implicit-function-declaration: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpk32v9vu7
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpqyf0i0n9
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpk32v9vu7/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpk32v9vu7/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=vla` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpqyf0i0n9/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpqyf0i0n9/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=vla` -> 0
 Compiler for C supports arguments -Werror=vla: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpoc4kbb4w
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpj6zswbrs
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpoc4kbb4w/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpoc4kbb4w/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Warray-bounds` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpj6zswbrs/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpj6zswbrs/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Warray-bounds` -> 0
 Compiler for C supports arguments -Warray-bounds: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmplkfximju
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpgtq1tff4
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmplkfximju/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmplkfximju/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wold-style-definition` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpgtq1tff4/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpgtq1tff4/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wold-style-definition` -> 0
 Compiler for C supports arguments -Wold-style-definition: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpc6rpvn13
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp13pbh_f7
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpc6rpvn13/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpc6rpvn13/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=double-promotion` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp13pbh_f7/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp13pbh_f7/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=double-promotion` -> 0
 Compiler for C supports arguments -Werror=double-promotion: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpae4n8vvm
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp596r1phy
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpae4n8vvm/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpae4n8vvm/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-braces -Wno-missing-braces` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp596r1phy/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp596r1phy/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-braces -Wno-missing-braces` -> 0
 Compiler for C supports arguments -Wno-missing-braces: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpllj2z38d
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp6kemee03
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpllj2z38d/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpllj2z38d/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wimplicit-int -Wno-implicit-int` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp6kemee03/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp6kemee03/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wimplicit-int -Wno-implicit-int` -> 0
 Compiler for C supports arguments -Wno-implicit-int: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp8o3wgv1e
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpvpw6lutb
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp8o3wgv1e/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp8o3wgv1e/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wreturn-type -Wno-return-type` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpvpw6lutb/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpvpw6lutb/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wreturn-type -Wno-return-type` -> 0
 Compiler for C supports arguments -Wno-return-type: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp0_qxhghp
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpoeo07qqq
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp0_qxhghp/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp0_qxhghp/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wunused-command-line-argument -Wno-unused-command-line-argument` -> 1
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpoeo07qqq/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpoeo07qqq/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Wunused-command-line-argument -Wno-unused-command-line-argument` -> 1
 stderr:
 riscv64-unknown-elf-gcc: error: unrecognized command line option '-Wunused-command-line-argument'; did you mean '-Wunused-dummy-argument'?
 -----------
 Compiler for C supports arguments -Wno-unused-command-line-argument: NO 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpzuxv3k0j
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp9y12z0a1
 Code:
 
 struct test { int part: 24; } __attribute__((packed));
 unsigned int foobar (const struct test *p) { return p->part; }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpzuxv3k0j/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpzuxv3k0j/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp9y12z0a1/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp9y12z0a1/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib` -> 0
 Checking if "packed structs may contain bitfields" compiles: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpdhv8_67p
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpvp1p2u_k
 Code:
 
 #include <stddef.h>
@@ -742,13 +742,13 @@ volatile size_t aa = 42;
 int main (void) { return overflows(aa, aa); }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpdhv8_67p/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpdhv8_67p/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
+Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpvp1p2u_k/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpvp1p2u_k/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
 stderr:
 /opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010074
 -----------
 Checking if "has __builtin_mul_overflow" : links: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpkgkawzsc
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpbv_3qlag
 Code:
 
 #include <stddef.h>
@@ -757,22 +757,22 @@ volatile size_t aa = 42;
 int main (void) { return overflows(aa, aa); }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpkgkawzsc/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpkgkawzsc/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
+Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpbv_3qlag/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpbv_3qlag/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
 stderr:
 /opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010074
 -----------
 Checking if "has __builtin_add_overflow" : links: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp7e7xso3e
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmporz2kspq
 Code:
 
 float _Complex test(float _Complex z) { return z; }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp7e7xso3e/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp7e7xso3e/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmporz2kspq/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmporz2kspq/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib` -> 0
 Checking if "supports _Complex" compiles: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp0133j437
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp9ulq7m1c
 Code:
 
 volatile int a = 42;
@@ -781,279 +781,279 @@ int main (void) {
 }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp0133j437/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp0133j437/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
+Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp9ulq7m1c/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp9ulq7m1c/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
 stderr:
 /opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010074
 -----------
 Checking if "has __builtin_expect" : links: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpt7fqmlqz
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpi8uz418p
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpt7fqmlqz/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpt7fqmlqz/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpi8uz418p/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpi8uz418p/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror` -> 0
 Compiler for C supports arguments -Werror: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp10kbt29e
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpzkfzm0fy
 Code:
 
 void *foobar(int) __attribute__((__alloc_size__(1)));
 void *foobar2(int, int) __attribute__((__alloc_size__(1, 2)));
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp10kbt29e/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp10kbt29e/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -Werror` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpzkfzm0fy/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpzkfzm0fy/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -Werror` -> 0
 Checking if "attribute __alloc_size__" compiles: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp_vge01p3
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp3akae9ol
 Code:
 
 void __attribute__((constructor(101))) ctor (void) {}
 void __attribute__((destructor(101))) dtor (void) {}
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp_vge01p3/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp_vge01p3/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -Werror` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp3akae9ol/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp3akae9ol/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -Werror` -> 0
 Checking if "attributes constructor/destructor" compiles: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp6y1mw_b6
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmps52tubjc
 Code:
 
 static int foo(void * i __attribute__((unused))) { return 0; }
 int main(void) { return foo(__builtin_alloca(1)); }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp6y1mw_b6/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp6y1mw_b6/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
+Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmps52tubjc/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmps52tubjc/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
 stderr:
 /opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
 -----------
 Checking if "test for __builtin_alloca" : links: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpuv7jehvp
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp2n1f73fj
 Code:
 
 static int foo(int i __attribute__((unused))) { return 0; }
 int main(void) { return foo(__builtin_ffs(42)); }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpuv7jehvp/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpuv7jehvp/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
+Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp2n1f73fj/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp2n1f73fj/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
 stderr:
 /opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
 -----------
 Checking if "test for __builtin_ffs" : links: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp4ug_0g0o
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpqcl__fp1
 Code:
 
 static int foo(long i __attribute__((unused))) { return 0; }
 int main(void) { return foo(__builtin_ffsl((long)42)); }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp4ug_0g0o/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp4ug_0g0o/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
+Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpqcl__fp1/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpqcl__fp1/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
 stderr:
 /opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
 -----------
 Checking if "test for __builtin_ffsl" : links: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp1jmc9p9d
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp1wa1diks
 Code:
 
 static int foo(long long i __attribute__((unused))) { return 0; }
 int main(void) { return foo(__builtin_ffsll((long long)42)); }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp1jmc9p9d/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp1jmc9p9d/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
+Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp1wa1diks/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp1wa1diks/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
 stderr:
 /opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
 -----------
 Checking if "test for __builtin_ffsll" : links: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp6kir_d5k
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpf84cq0vu
 Code:
 
 static int foo(int i __attribute__((unused))) { return 0; }
 int main(void) { return foo(__builtin_ctz((unsigned int)42)); }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp6kir_d5k/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp6kir_d5k/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
+Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpf84cq0vu/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpf84cq0vu/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
 stderr:
 /opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
 -----------
 Checking if "test for __builtin_ctz" : links: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpenm2p5c6
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp10jeecns
 Code:
 
 static int foo(int i __attribute__((unused))) { return 0; }
 int main(void) { return foo(__builtin_ctzl((unsigned long)42)); }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpenm2p5c6/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpenm2p5c6/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
+Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp10jeecns/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp10jeecns/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
 stderr:
 /opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
 -----------
 Checking if "test for __builtin_ctzl" : links: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmputusobaz
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp5w2g_9d6
 Code:
 
 static int foo(int i __attribute__((unused))) { return 0; }
 int main(void) { return foo(__builtin_ctzll((unsigned long long)42)); }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmputusobaz/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmputusobaz/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
+Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp5w2g_9d6/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp5w2g_9d6/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
 stderr:
 /opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
 -----------
 Checking if "test for __builtin_ctzll" : links: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp19t677xv
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpqbxeamnv
 Code:
 
 static int foo(long double i __attribute__((unused))) { return 0; }
 int main(void) { return foo(__builtin_copysignl((long double)42, (long double) 42)); }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp19t677xv/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp19t677xv/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
+Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpqbxeamnv/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpqbxeamnv/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
 stderr:
 /opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
 -----------
 Checking if "test for __builtin_copysignl" : links: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmptvoxs0i9
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpmber5pyt
 Code:
 
 static int foo(double i __attribute__((unused))) { return 0; }
 int main(void) { return foo(__builtin_copysign(42, 42)); }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmptvoxs0i9/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmptvoxs0i9/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
+Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpmber5pyt/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpmber5pyt/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
 stderr:
 /opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
 -----------
 Checking if "test for __builtin_copysign" : links: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp_u8xv2j7
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp_219w9j4
 Code:
 
 static int foo(int i __attribute__((unused))) { return 0; }
 int main(void) { return foo(__builtin_isinfl((long double)42)); }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp_u8xv2j7/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp_u8xv2j7/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
+Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp_219w9j4/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp_219w9j4/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
 stderr:
 /opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
 -----------
 Checking if "test for __builtin_isinfl" : links: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpdo7j6ltu
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp08k3jjaa
 Code:
 
 static int foo(int i __attribute__((unused))) { return 0; }
 int main(void) { return foo(__builtin_isinf((long double)42)); }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpdo7j6ltu/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpdo7j6ltu/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
+Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp08k3jjaa/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp08k3jjaa/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
 stderr:
 /opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
 -----------
 Checking if "test for __builtin_isinf" : links: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp_7_bdt7c
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp5627t48p
 Code:
 
 static int foo(int i __attribute__((unused))) { return 0; }
 int main(void) { return foo(__builtin_isnanl((long double)42)); }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp_7_bdt7c/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp_7_bdt7c/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
+Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp5627t48p/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp5627t48p/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
 stderr:
 /opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
 -----------
 Checking if "test for __builtin_isnanl" : links: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpgy3_tcfr
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpayhabcmp
 Code:
 
 static int foo(int i __attribute__((unused))) { return 0; }
 int main(void) { return foo(__builtin_isnan((long double)42)); }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpgy3_tcfr/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpgy3_tcfr/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
+Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpayhabcmp/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpayhabcmp/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
 stderr:
 /opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
 -----------
 Checking if "test for __builtin_isnan" : links: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp0skeqw4d
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp2r_shnqz
 Code:
 
 static int foo(int i __attribute__((unused))) { return 0; }
 int main(void) { return foo(__builtin_finitel((long double)42)); }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp0skeqw4d/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp0skeqw4d/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
+Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp2r_shnqz/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp2r_shnqz/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
 stderr:
 /opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
 -----------
 Checking if "test for __builtin_finitel" : links: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp4hxwnu7y
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpg02um3sc
 Code:
 
 static int foo(int i __attribute__((unused))) { return 0; }
 int main(void) { return foo(__builtin_isfinite((long double)42)); }
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp4hxwnu7y/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp4hxwnu7y/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
+Command line: `riscv64-unknown-elf-gcc -L/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpg02um3sc/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpg02um3sc/output.exe -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -nostdlib -nodefaultlibs -Wl,--no-dynamic-linker -Wl,--build-id=none -MD -MP` -> 0
 stderr:
 /opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/8.3.0/../../../../riscv64-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000010054
 -----------
 Checking if "test for __builtin_isfinite" : links: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpa63u7nyh
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpupdtyqna
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpa63u7nyh/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpa63u7nyh/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fno-tree-loop-distribute-patterns` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpupdtyqna/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpupdtyqna/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fno-tree-loop-distribute-patterns` -> 0
 Compiler for C supports arguments -fno-tree-loop-distribute-patterns: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpao_dtf7t
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpjxdwk3n4
 Code:
 int __attribute__((no_builtin)) foo(int x) { return x + 1; }
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpao_dtf7t/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpao_dtf7t/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -Werror` -> 1
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpjxdwk3n4/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpjxdwk3n4/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -std=c18 -nostdlib -Werror` -> 1
 stderr:
-/home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpao_dtf7t/testfile.c:1:1: error: 'no_builtin' attribute directive ignored [-Werror=attributes]
+/home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpjxdwk3n4/testfile.c:1:1: error: 'no_builtin' attribute directive ignored [-Werror=attributes]
  int __attribute__((no_builtin)) foo(int x) { return x + 1; }
  ^~~
 cc1: all warnings being treated as errors
 -----------
 Checking if "no_builtin attribute" compiles: NO 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp3hae7cqm
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp7fho2pwu
 Code:
 inline __attribute__((always_inline)) int foo(void) { return 0; }
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp3hae7cqm/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp3hae7cqm/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp7fho2pwu/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp7fho2pwu/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes` -> 0
 Compiler for C supports function attribute always_inline: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpqyeklb5l
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpns__f825
 Code:
 inline __attribute__((gnu_inline)) int foo(void) { return 0; }
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpqyeklb5l/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpqyeklb5l/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpns__f825/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpns__f825/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -Werror=attributes` -> 0
 Compiler for C supports function attribute gnu_inline: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpvwug_veh
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp8qj2439y
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpvwug_veh/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpvwug_veh/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fno-builtin` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp8qj2439y/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp8qj2439y/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fno-builtin` -> 0
 Compiler for C supports arguments -fno-builtin: YES 
 Running command: /usr/bin/sed -e '/^#/d' -e '/^$/d' -e 's/ .*$//' /home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/iconv/encoding.aliases
 --- stdout ---
@@ -1112,51 +1112,51 @@ win_1258
 
 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp13ddx6qt
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpdo7njib8
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp13ddx6qt/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp13ddx6qt/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -ffunction-sections` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpdo7njib8/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpdo7njib8/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -ffunction-sections` -> 0
 Compiler for C supports arguments -ffunction-sections: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpnp3zciqp
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpx3iq5vhh
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpnp3zciqp/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpnp3zciqp/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fstack-protector-all` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpx3iq5vhh/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpx3iq5vhh/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fstack-protector-all` -> 0
 Compiler for C supports arguments -fstack-protector-all: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpzqo8idda
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpu68dq9a3
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpzqo8idda/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpzqo8idda/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fstack-protector-strong` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpu68dq9a3/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpu68dq9a3/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fstack-protector-strong` -> 0
 Compiler for C supports arguments -fstack-protector-strong: YES 
 ../../../../pythondata-software-picolibc/pythondata_software_picolibc/data/meson.build:1242: DEPRECATION: Project uses feature that was always broken, and is now deprecated since '1.3.0': str.format: Value other than strings, integers, bools, options, dictionaries and lists thereof..
 ../../../../pythondata-software-picolibc/pythondata_software_picolibc/data/meson.build:1254: DEPRECATION: Project uses feature that was always broken, and is now deprecated since '1.3.0': str.format: Value other than strings, integers, bools, options, dictionaries and lists thereof..
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp3lrpmu0x
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp61gi7z88
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp3lrpmu0x/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp3lrpmu0x/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fno-builtin-malloc` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp61gi7z88/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp61gi7z88/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fno-builtin-malloc` -> 0
 Compiler for C supports arguments -fno-builtin-malloc: YES 
 Running compile:
-Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp7uz24kuh
+Working directory:  /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpnkx8s1wl
 Code:
 extern int i;
 int i;
 
 -----------
-Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp7uz24kuh/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmp7uz24kuh/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fno-builtin-free` -> 0
+Command line: `riscv64-unknown-elf-gcc -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio -I/home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include -I/home/mengcheng/Documents/litex/litex/soc/software/libbase -I/home/mengcheng/Documents/litex/litex/soc/software/include -I/home/mengcheng/Documents/litex/litex/soc/software -I/home/mengcheng/Documents/build/sim/software/include -I/home/mengcheng/Documents/build/sim/software/include/../libc -I/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpnkx8s1wl/testfile.c -o /home/mengcheng/Documents/build/sim/software/libc/meson-private/tmpnkx8s1wl/output.obj -c -Os -march=rv32i2p0_m -mabi=ilp32 -D__vexriscv__ -g3 -no-pie -fomit-frame-pointer -Wall -fno-builtin -fno-stack-protector -fexceptions -Wpragmas -D_FILE_OFFSET_BITS=64 -O0 -fno-builtin-free` -> 0
 Compiler for C supports arguments -fno-builtin-free: YES 
 Message: libc/string/memcpy.c: machine overrides generic
 Message: libc/string/memmove.S: machine overrides generic
