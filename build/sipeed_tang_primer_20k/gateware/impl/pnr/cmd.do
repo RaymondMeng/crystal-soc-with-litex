@@ -1,0 +1,14 @@
+-d /home/mengcheng/Documents/build/sipeed_tang_primer_20k/gateware/impl/gwsynthesis/project.vg
+-p GW2A-18C-PBGA256-8
+-pn GW2A-LV18PG256C8/I7
+-cst /home/mengcheng/Documents/build/sipeed_tang_primer_20k/gateware/sipeed_tang_primer_20k.cst
+-cfg /home/mengcheng/Documents/build/sipeed_tang_primer_20k/gateware/impl/pnr/device.cfg
+-sdc /home/mengcheng/Documents/build/sipeed_tang_primer_20k/gateware/sipeed_tang_primer_20k.sdc
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-correct_hold 1
+-route_maxfan 23
+-global_freq 100.000

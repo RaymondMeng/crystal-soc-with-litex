@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "uart.h": "c",
+        "csr.h": "c",
+        "system.h": "c",
+        "sdcard.h": "c",
+        "sata.h": "c",
+        "soc.h": "c",
+        "des_core.h": "c",
+        "stdint.h": "c",
+        "stdio_private.h": "c",
+        "console.h": "c"
+    }
+}

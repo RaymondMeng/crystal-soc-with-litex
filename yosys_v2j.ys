@@ -1,0 +1,3 @@
+read_verilog -sv litedescore/src/DES_top.v
+proc
+write_json litedescore/src/DES_top.v.json
