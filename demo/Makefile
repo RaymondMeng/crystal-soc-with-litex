@@ -10,8 +10,12 @@ ifdef WITH_CXX
 endif
 
 
-all: demo.bin
+all:  demo.bin 
 
+# liblitedescore.a: des_core.o
+# 	$(AR) crs liblitedescore.a des_core.o
+
+# -Wl,--whole-archive \
 
 %.bin: %.elf
 	$(OBJCOPY) -O binary $< $@
@@ -25,8 +29,8 @@ demo.elf: $(OBJECTS)
 	$(CC) $(LDFLAGS) -T linker.ld -N -o $@ \
 		$(OBJECTS) \
 		$(PACKAGES:%=-L$(BUILD_DIR)/software/%) \
-		-Wl,--whole-archive \
 		-Wl,--gc-sections \
+		-Wl,--whole-archive \
 		-Wl,-Map,$@.map \
 		$(LIBS:lib%=-l%)
 

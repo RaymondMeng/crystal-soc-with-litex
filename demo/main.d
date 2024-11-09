@@ -24,11 +24,11 @@ main.o: main.c \
  /home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/string.h \
  /home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/strings.h \
  /home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/string.h \
- /home/mengcheng/Documents/litex/litex/soc/software/include/irq.h \
- /home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv/irq.h \
  /home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv/system.h \
  /home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv/csr-defs.h \
  /home/mengcheng/Documents/build/sipeed_tang_primer_20k/software/include/generated/soc.h \
+ /home/mengcheng/Documents/litex/litex/soc/software/include/irq.h \
+ /home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv/irq.h \
  /home/mengcheng/Documents/build/sipeed_tang_primer_20k/software/include/generated/csr.h \
  /home/mengcheng/Documents/litex/litex/soc/software/include/hw/common.h \
  /home/mengcheng/Documents/litex/litex/soc/software/libbase/uart.h \
@@ -84,15 +84,15 @@ main.o: main.c \
 
 /home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/string.h:
 
-/home/mengcheng/Documents/litex/litex/soc/software/include/irq.h:
-
-/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv/irq.h:
-
 /home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv/system.h:
 
 /home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv/csr-defs.h:
 
 /home/mengcheng/Documents/build/sipeed_tang_primer_20k/software/include/generated/soc.h:
+
+/home/mengcheng/Documents/litex/litex/soc/software/include/irq.h:
+
+/home/mengcheng/Documents/litex/litex/soc/cores/cpu/vexriscv/irq.h:
 
 /home/mengcheng/Documents/build/sipeed_tang_primer_20k/software/include/generated/csr.h:
 

@@ -9,6 +9,18 @@
         "des_core.h": "c",
         "stdint.h": "c",
         "stdio_private.h": "c",
-        "console.h": "c"
+        "console.h": "c",
+        "*.inc": "cpp",
+        "chrono": "c",
+        "*.s": "cpp",
+        "*.tcc": "cpp",
+        "numeric": "cpp",
+        "fstream": "cpp",
+        "iostream": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "system_error": "cpp",
+        "typeinfo": "cpp",
+        "random": "cpp"
     }
 }
