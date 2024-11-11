@@ -32,7 +32,8 @@ main.o: main.c \
  /home/mengcheng/Documents/build/sipeed_tang_primer_20k/software/include/generated/csr.h \
  /home/mengcheng/Documents/litex/litex/soc/software/include/hw/common.h \
  /home/mengcheng/Documents/litex/litex/soc/software/libbase/uart.h \
- /home/mengcheng/Documents/litex/litex/soc/software/libbase/console.h
+ /home/mengcheng/Documents/litex/litex/soc/software/libbase/console.h \
+ /home/mengcheng/Documents/litex/litex/soc/software/libbase/dht11.h
 
 /home/mengcheng/Documents/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio/stdio.h:
 
@@ -101,3 +102,5 @@ main.o: main.c \
 /home/mengcheng/Documents/litex/litex/soc/software/libbase/uart.h:
 
 /home/mengcheng/Documents/litex/litex/soc/software/libbase/console.h:
+
+/home/mengcheng/Documents/litex/litex/soc/software/libbase/dht11.h:

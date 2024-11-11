@@ -8,6 +8,7 @@
 #include <irq.h>
 #include <libbase/uart.h>
 #include <libbase/console.h>
+#include <libbase/dht11.h>
 #include <generated/csr.h>
 // #include "liblitedescore/des_core.h"
 
@@ -91,6 +92,9 @@ static void help(void)
 	puts("des_encryp         - des encryption mode");
 	puts("des_decryp         - des decryption mode");
 #endif
+#ifdef CSR_DHT11_BASE
+	puts("dht_measure        - DHT11 measure");
+#endif
 	puts("donut              - Spinning Donut demo");
 	puts("helloc             - Hello C");
 #ifdef WITH_CXX
@@ -139,41 +143,6 @@ static void led_cmd(void)
 }
 #endif
 
-
-// #ifdef CSR_DES_CORE_BASE
-
-// static void des_core_cmd(void)
-// {
-// 	int i;
-// 	printf("Entering des mode...\n");
-
-// 	printf("Counter mode...\n");
-// 	for(i=0; i<32; i++) {
-// 		leds_out_write(i);
-// 		busy_wait(100);
-// 	}
-
-// 	printf("Shift mode...\n");
-// 	for(i=0; i<4; i++) {
-// 		leds_out_write(1<<i);
-// 		busy_wait(200);
-// 	}
-// 	for(i=0; i<4; i++) {
-// 		leds_out_write(1<<(3-i));
-// 		busy_wait(200);
-// 	}
-
-// 	printf("Dance mode...\n");
-// 	for(i=0; i<4; i++) {
-// 		leds_out_write(0x55);
-// 		busy_wait(200);
-// 		leds_out_write(0xaa);
-// 		busy_wait(200);
-// 	}
-// }
-// #endif
-// extern void des_core_encrypt(uint64_t plaintext, uint64_t key, uint64_t *ciphertext);
-// extern void des_core_decrypt(uint64_t ciphertext, uint64_t key, uint64_t *plaintext);
 extern void donut(void);
 
 static void donut_cmd(void)
@@ -220,6 +189,20 @@ static void console_service(void)
 	else if(strcmp(token, "led") == 0)
 		led_cmd();
 #endif
+
+#ifdef CSR_DHT11_BASE
+	else if(strcmp(token, "dht_measure") == 0){
+		printf("Entering dht_measure...\n");
+		uint8_t TH, TL, RH, RL;
+		DHT11_receive(&TH, &TL, &RH, &RL);
+		for (size_t i = 0; i < 10; i++)
+		{
+			printf("Temperature: %d.%d     Humidity: %d.%d%%\r\n", TH, TL, RH, RL);
+			DHT11_delay_ms(2000);
+		}
+	}
+#endif
+
 #ifdef CSR_DES_CORE_BASE
 	else if(strcmp(token, "des_encryp") == 0){
 		printf("Entering des_encryp...\n");

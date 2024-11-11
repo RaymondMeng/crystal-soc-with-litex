@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        ".fantomasignore": "ignore",
         "uart.h": "c",
         "csr.h": "c",
         "system.h": "c",
@@ -21,6 +22,7 @@
         "ostream": "cpp",
         "system_error": "cpp",
         "typeinfo": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "dht11.h": "c"
     }
 }
