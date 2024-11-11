@@ -8,7 +8,8 @@
         "leds": 4026542080,
         "sdram": 4026544128,
         "timer0": 4026546176,
-        "uart": 4026548224
+        "uart": 4026548224,
+        "video_terminal_vtg": 4026550272
     },
     "csr_registers": {
         "des_core_din": {
@@ -250,6 +251,51 @@
             "addr": 4026548252,
             "size": 1,
             "type": "ro"
+        },
+        "video_terminal_vtg_enable": {
+            "addr": 4026550272,
+            "size": 1,
+            "type": "rw"
+        },
+        "video_terminal_vtg_hres": {
+            "addr": 4026550276,
+            "size": 1,
+            "type": "rw"
+        },
+        "video_terminal_vtg_hsync_start": {
+            "addr": 4026550280,
+            "size": 1,
+            "type": "rw"
+        },
+        "video_terminal_vtg_hsync_end": {
+            "addr": 4026550284,
+            "size": 1,
+            "type": "rw"
+        },
+        "video_terminal_vtg_hscan": {
+            "addr": 4026550288,
+            "size": 1,
+            "type": "rw"
+        },
+        "video_terminal_vtg_vres": {
+            "addr": 4026550292,
+            "size": 1,
+            "type": "rw"
+        },
+        "video_terminal_vtg_vsync_start": {
+            "addr": 4026550296,
+            "size": 1,
+            "type": "rw"
+        },
+        "video_terminal_vtg_vsync_end": {
+            "addr": 4026550300,
+            "size": 1,
+            "type": "rw"
+        },
+        "video_terminal_vtg_vscan": {
+            "addr": 4026550304,
+            "size": 1,
+            "type": "rw"
         }
     },
     "constants": {
@@ -265,7 +311,7 @@
         "config_cpu_name": "vexriscv",
         "config_cpu_human_name": "vexriscv",
         "config_cpu_nop": "nop",
-        "config_identifier": "litex soc on tang primer 20k 2024-11-09 18:41:36",
+        "config_identifier": "litex soc on tang primer 20k 2024-11-11 04:17:19",
         "config_l2_size": 8192,
         "config_csr_data_width": 32,
         "config_csr_alignment": 32,
