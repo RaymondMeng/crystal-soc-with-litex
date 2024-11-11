@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="sipeed_tang_primer_20k" Register="2363" Alu="466" Lut="3795" Bsram="40" Ssram="272" T_Register="3832(2363)" T_Alu="768(466)" T_Lut="7537(3795)" T_MULT18X18="4(0)" T_ALU54D="2(0)" T_Bsram="46(40)" T_Ssram="400(272)">
-    <SubModule name="DES_top" Register="74" Lut="17" T_Register="138(74)" T_Lut="1193(17)">
-        <SubModule name="round_inst" Lut="337" T_Lut="370(337)">
-            <SubModule name="s_box_inst" T_Lut="33(0)">
+<Module name="sipeed_tang_primer_20k" Register="2366" Alu="466" Lut="3841" Bsram="40" Ssram="272" T_Register="3835(2366)" T_Alu="768(466)" T_Lut="7552(3841)" T_MULT18X18="4(0)" T_ALU54D="2(0)" T_Bsram="46(40)" T_Ssram="400(272)">
+    <SubModule name="DES_top" Register="74" Lut="14" T_Register="138(74)" T_Lut="1163(14)">
+        <SubModule name="round_inst" Lut="336" T_Lut="370(336)">
+            <SubModule name="s_box_inst" T_Lut="34(0)">
                 <SubModule name="sbox2_lut_inst" Lut="4" T_Lut="4(4)"/>
                 <SubModule name="sbox3_lut_inst" Lut="4" T_Lut="4(4)"/>
                 <SubModule name="sbox4_lut_inst" Lut="8" T_Lut="8(8)"/>
-                <SubModule name="sbox7_lut_inst" Lut="9" T_Lut="9(9)"/>
+                <SubModule name="sbox7_lut_inst" Lut="10" T_Lut="10(10)"/>
                 <SubModule name="sbox8_lut_inst" Lut="8" T_Lut="8(8)"/>
             </SubModule>
         </SubModule>
-        <SubModule name="mux_inst" Register="64" Lut="806" T_Register="64(64)" T_Lut="806(806)"/>
+        <SubModule name="mux_inst" Register="64" Lut="779" T_Register="64(64)" T_Lut="779(779)"/>
     </SubModule>
-    <SubModule name="VexRiscv" Register="1153" Alu="237" Lut="2208" MULT18X18="4" ALU54D="2" Ssram="32" T_Register="1331(1153)" T_Alu="302(237)" T_Lut="2549(2208)" T_MULT18X18="4(4)" T_ALU54D="2(2)" T_Bsram="6(0)" T_Ssram="128(32)">
+    <SubModule name="VexRiscv" Register="1153" Alu="237" Lut="2207" MULT18X18="4" ALU54D="2" Ssram="32" T_Register="1331(1153)" T_Alu="302(237)" T_Lut="2548(2207)" T_MULT18X18="4(4)" T_ALU54D="2(2)" T_Bsram="6(0)" T_Ssram="128(32)">
         <SubModule name="IBusCachedPlugin_cache" Register="96" Alu="26" Lut="140" Bsram="2" Ssram="48" T_Register="96(96)" T_Alu="26(26)" T_Lut="140(140)" T_Bsram="2(2)" T_Ssram="48(48)"/>
         <SubModule name="dataCache_1" Register="82" Alu="39" Lut="201" Bsram="4" Ssram="48" T_Register="82(82)" T_Alu="39(39)" T_Lut="201(201)" T_Bsram="4(4)" T_Ssram="48(48)"/>
     </SubModule>

@@ -45,6 +45,7 @@ main.o: /home/mengcheng/Documents/litex/litex/soc/software/bios/main.c \
  /home/mengcheng/Documents/litex/litex/soc/software/libbase/uart.h \
  /home/mengcheng/Documents/litex/litex/soc/software/libbase/i2c.h \
  /home/mengcheng/Documents/litex/litex/soc/software/libbase/hyperram.h \
+ /home/mengcheng/Documents/litex/litex/soc/software/libbase/dht11.h \
  /home/mengcheng/Documents/litex/litex/soc/software/liblitedram/sdram.h \
  /home/mengcheng/Documents/litex/litex/soc/software/liblitedram/utils.h \
  /home/mengcheng/Documents/litex/litex/soc/software/libliteeth/udp.h \
@@ -146,6 +147,8 @@ main.o: /home/mengcheng/Documents/litex/litex/soc/software/bios/main.c \
 /home/mengcheng/Documents/litex/litex/soc/software/libbase/i2c.h:
 
 /home/mengcheng/Documents/litex/litex/soc/software/libbase/hyperram.h:
+
+/home/mengcheng/Documents/litex/litex/soc/software/libbase/dht11.h:
 
 /home/mengcheng/Documents/litex/litex/soc/software/liblitedram/sdram.h:
 

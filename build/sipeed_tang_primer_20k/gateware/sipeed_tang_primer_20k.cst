@@ -4,6 +4,8 @@ IO_LOC "serial_rx" T13;
 IO_PORT "serial_rx" IO_TYPE=LVCMOS33;
 IO_LOC "serial_tx" M11;
 IO_PORT "serial_tx" IO_TYPE=LVCMOS33;
+IO_LOC "dht_dht_data" P6;
+IO_PORT "dht_dht_data" IO_TYPE=LVCMOS33;
 IO_LOC "ddram_a[0]" F7;
 IO_PORT "ddram_a[0]" IO_TYPE=SSTL15;
 IO_LOC "ddram_a[1]" A4;
